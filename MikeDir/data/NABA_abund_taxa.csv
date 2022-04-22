@@ -1,0 +1,187 @@
+"","group","ScientificName","CommonName","count.recs","mean.abund"
+"1","RE","Thymelicus lineola","European Skipper",2568,521.993380062305
+"2","RE","Satyrium calanus","Banded Hairstreak",2412,13.9705638474295
+"3","RE","Satyrium titus","Coral Hairstreak",1914,7.45036572622779
+"4","RE","Satyrium liparops","Striped Hairstreak",1253,3.62330407023144
+"5","RE","Satyrium acadica","Acadian Hairstreak",797,11.6863237139272
+"6","RE","Satyrium edwardsii","Edwards' Hairstreak",785,24.6853503184713
+"7","RE","Lycaena hyllus","Bronze Copper",776,4.75
+"8","RE","Satyrium caryaevorum","Hickory Hairstreak",584,5.78938356164384
+"9","RE","Lycaena epixanthe","Bog Copper",420,68.6904761904762
+"10","RE","Satyrium","Satyrium",141,4.97872340425532
+"11","RE","Lycaeides melissa samuelis","'Karner' Melissa Blue",109,82.954128440367
+"12","RE","Lycaena dione","Gray Copper",85,3.65882352941176
+"13","RE","Lycaena helloides","Purplish Copper",85,5.03529411764706
+"14","RE","Lycaena dorcas","Dorcas Copper",77,19.038961038961
+"15","RE","Satyrium favonius ontario","'Northern' Oak Hairstreak",50,2.12
+"16","RE","Lycaeides idas","Northern Blue",29,45.6551724137931
+"17","RE","Satyrium favonius","Oak Hairstreak",28,1.92857142857143
+"18","RE","Satyrium favonius favonius","'Southern' Oak Hairstreak",21,1.38095238095238
+"19","RE","Lycaeides melissa","Melissa Blue",16,58.5
+"20","RE","Hesperia comma","Common Branded Skipper",14,1.64285714285714
+"21","RL","Phyciodes tharos","Pearl Crescent",5433,63.5422418553285
+"22","RL","Colias eurytheme","Orange Sulphur",5126,45.8536870854467
+"23","RL","Colias philodice","Clouded Sulphur",4954,48.045014129996
+"24","RL","Everes comyntas","Eastern Tailed-Blue",4789,40.4234704531217
+"25","RL","Speyeria cybele","Great Spangled Fritillary",4703,40.7010418881565
+"26","RL","Cercyonis pegala","Common Wood-Nymph",4310,58.1408352668213
+"27","RL","Euphyes vestris","Dun Skipper",4229,27.6214235043746
+"28","RL","Ancyloxypha numitor","Least Skipper",4031,19.7685437856611
+"29","RL","Limenitis archippus","Viceroy",3934,8.40747330960854
+"30","RL","Megisto cymela","Little Wood-Satyr",3738,32.4232209737828
+"31","RL","Limenitis arthemis astyanax","Red-spotted Purple",3684,17.6224212812161
+"32","RL","Wallengrenia egeremet","Northern Broken-Dash",3033,17.0956149027366
+"33","RL","Anatrytone logan","Delaware Skipper",2825,12.4722123893805
+"34","RL","Enodia anthedon","Northern Pearly-eye",2707,8.64351680827484
+"35","RL","Erynnis horatius","Horace's Duskywing",2405,31.8794178794179
+"36","RL","Asterocampa celtis","Hackberry Emperor",2264,61.2875441696113
+"37","RL","Lycaena phlaeas","American Copper",2153,31.618671620994
+"38","RL","Satyrodes appalachia","Appalachian Brown",1982,9.4021190716448
+"39","RL","Erynnis baptisiae","Wild Indigo Duskywing",1905,14.3459317585302
+"40","RL","Boloria bellona","Meadow Fritillary",1881,16.3014354066986
+"41","RL","Polites origenes","Crossline Skipper",1792,5.99330357142857
+"42","RL","Satyrodes eurydice","Eyed Brown",1777,21.4991558806978
+"43","RL","Thorybes pylades","Northern Cloudywing",1623,4.65187923598275
+"44","RL","Pholisora catullus","Common Sootywing",1555,9.64565916398714
+"45","RL","Asterocampa clyton","Tawny Emperor",1545,68.4932038834951
+"46","RL","Euphydryas phaeton","Baltimore Checkerspot",1434,31.1338912133891
+"47","RL","Chlosyne nycteis","Silvery Checkerspot",1431,24.3221523410203
+"48","RL","Polites mystic","Long Dash",1420,13.8415492957746
+"49","RL","Poanes hobomok","Hobomok Skipper",1377,8.24328249818446
+"50","RL","Speyeria aphrodite","Aphrodite Fritillary",1376,19.374273255814
+"51","RL","Thorybes bathyllus","Southern Cloudywing",1363,5.33382245047689
+"52","RL","Calycopis cecrops","Red-banded Hairstreak",1338,9.65844544095665
+"53","RL","Pyrgus communis","Common Checkered-Skipper",1147,9.4202266782912
+"54","RL","Phyciodes selenis","Northern Crescent",1145,90.7257641921397
+"55","RL","Poanes zabulon","Zabulon Skipper",1103,13.2284678150499
+"56","RL","Limenitis arthemis arthemis","White Admiral",1067,20.1490159325211
+"57","RL","Poanes viator","Broad-winged Skipper",1037,37.1957569913211
+"58","RL","Achalarus lyciades","Hoary Edge",952,5.33088235294118
+"59","RL","Poanes massasoit","Mulberry Wing",870,14.0735632183908
+"60","RL","Euphyes conspicua","Black Dash",849,13.7290930506478
+"61","RL","Boloria selene","Silver-bordered Fritillary",815,6.31411042944785
+"62","RL","Coenonympha tullia","Common Ringlet",765,29.5450980392157
+"63","RL","Euphyes dion","Dion Skipper",726,5.59228650137741
+"64","RL","Speyeria atlantis","Atlantis Fritillary",673,22.3551263001486
+"65","RL","Cyllopsis gemma","Gemmed Satyr",492,3.66463414634146
+"66","RL","Speyeria","Speyeria",428,16.7733644859813
+"67","RL","Limenitis arthemis","Red-spotted Admiral",370,45.5513513513514
+"68","RL","Colias interior","Pink-edged Sulphur",365,31.2
+"69","RL","Enodia portlandia","Southern Pearly-eye",337,4.2700296735905
+"70","RL","Erynnis","Erynnis",319,3.96238244514107
+"71","RL","Amblyscirtes vialis","Common Roadside-Skipper",312,4.04487179487179
+"72","RL","Amblyscirtes aesculapius","Lace-winged Roadside-Skipper",286,4.07342657342657
+"73","RL","Staphylus hayhurstii","Hayhurst's Scallopwing",283,3.34982332155477
+"74","RL","Chlosyne harrisii","Harris' Checkerspot",279,7.60573476702509
+"75","RL","Erynnis icelus","Dreamy Duskywing",264,4.75378787878788
+"76","RL","Panoquina panoquin","Salt Marsh Skipper",261,69.27969348659
+"77","RL","Erynnis juvenalis","Juvenal's Duskywing",259,4.87258687258687
+"78","RL","Problema byssus","Byssus Skipper",238,7.97899159663866
+"79","RL","Thorybes confusis","Confused Cloudywing",233,2.70386266094421
+"80","RL","Calephelis virginiensis","Little Metalmark",230,7.4
+"81","RL","Colias","Colias",227,18.9030837004405
+"82","RL","Coenonympha tullia inornata","'Inornate' Common Ringlet",216,36.75
+"83","RL","Speyeria diana","Diana Fritillary",210,8.03333333333333
+"84","RL","Enodia creola","Creole Pearly-eye",192,3.765625
+"85","RL","Hesperia sassacus","Indian Skipper",179,3.84916201117318
+"86","RL","Neonympha areolata","Georgia Satyr",176,13.3181818181818
+"87","RL","Poanes aaroni","Aaron's Skipper",147,53.578231292517
+"88","RL","Carterocephalus palaemon","Arctic Skipper",144,7.84027777777778
+"89","RL","Euphyes bimacula","Two-spotted Skipper",140,6.64285714285714
+"90","RL","Chlosyne gorgone","Gorgone Checkerspot",138,10.0579710144928
+"91","RL","Calephelis borealis","Northern Metalmark",115,18.8695652173913
+"92","RL","Phyciodes batesii","Tawny Crescent",101,3.6039603960396
+"93","RL","Boloria","Boloria",100,3.47
+"94","RL","Euphyes arpa","Palmetto Skipper",100,7.74
+"95","RL","Poanes yehl","Yehl Skipper",99,5.65656565656566
+"96","RL","Erynnis lucilius","Columbine Duskywing",98,22.1428571428571
+"97","RL","Euphyes dukesi","Dukes' Skipper",83,6.60240963855422
+"98","RL","Erynnis funeralis","Funereal Duskywing",82,4.03658536585366
+"99","RL","Euphyes pilatka","Palatka Skipper",81,2.87654320987654
+"100","RL","Speyeria idalia","Regal Fritillary",75,109.946666666667
+"101","RL","Problema bulenta","Rare Skipper",74,14.7027027027027
+"102","RL","Polites baracoa","Baracoa Skipper",72,17.4027777777778
+"103","RL","Erynnis martialis","Mottled Duskywing",68,3.32352941176471
+"104","RL","Polygonus leo","Hammock Skipper",56,10.6071428571429
+"105","RL","Amblyscirtes hegon","Pepper and Salt Skipper",53,2.18867924528302
+"106","RL","Euphyes berryi","Berry's Skipper",49,4.12244897959184
+"107","RL","Thorybes","Thorybes",47,1.78723404255319
+"108","RL","Asterocampa","Asterocampa",43,2.13953488372093
+"109","RL","Calephelis mutica","Swamp Metalmark",40,8.05
+"110","RL","Atrytonopsis hianna","Dusted Skipper",38,2.60526315789474
+"111","RL","Plebejus saepiolus","Greenish Blue",38,7.84210526315789
+"112","RL","Amblyscirtes carolina","Carolina Roadside-Skipper",31,14.3870967741935
+"113","RL","Hesperia attalus","Dotted Skipper",30,5.43333333333333
+"114","RL","Speyeria atlantis atlantis","'Atlantis' Atlantis Fritillary",30,13.2
+"115","RL","Amblyscirtes belli","Bell's Roadside-Skipper",27,2.44444444444444
+"116","RL","Amblyscirtes reversa","Reversed Roadside-Skipper",27,5.51851851851852
+"117","RL","Erynnis brizo","Sleepy Duskywing",25,1.8
+"118","RL","Chlosyne","Chlosyne",24,7.83333333333333
+"119","RL","Amblyscirtes alternata","Dusky Roadside-Skipper",21,1.76190476190476
+"120","RL","Hesperia meskei","Meske's Skipper",20,3.5
+"121","RL","Megathymus cofaqui","Cofaqui Giant-Skipper",16,1.75
+"122","RL","Hesperia leonardus","Leonard's Skipper",15,6.53333333333333
+"123","RL","Oeneis jutta","Jutta Arctic",15,4.93333333333333
+"124","RL","Strymon martialis","Martial Scrub-Hairstreak",15,1.93333333333333
+"125","RL","Oarisma poweshiek","Poweshiek Skipperling",13,9
+"126","RL","Everes amyntula","Western Tailed-Blue",10,7.9
+"127","RL","Oeneis macounii","Macoun's Arctic",10,3.9
+"128","RL","Poanes","Poanes",8,1.25
+"129","RL","Boloria eunomia","Bog Fritillary",7,3
+"130","RL","Oeneis chryxus","Chryxus Arctic",5,6.2
+"131","RL","Oeneis melissa","Melissa Arctic",5,61.8
+"132","RL","Limenitis arthemis artXast","Hybrid arthemisXastyanax",4,2.25
+"133","RL","Euphyes","Euphyes",3,9
+"134","RL","Boloria freija","Freija Fritillary",2,3
+"135","RL","Boloria frigga","Frigga Fritillary",2,7
+"136","RL","Erebia rossii","Ross' Alpine",2,6.5
+"137","RL","Neonympha mitchellii","Mitchell's Satyr",2,2
+"138","RL","Oeneis polixenes","Polixenes Arctic",2,9
+"139","RL","Colias gigantea","Giant Sulphur",1,1
+"140","RL","Colias nastes","Labrador Sulphur",1,5
+"141","RL","Colias palaeno","Palaeno Sulphur",1,1
+"142","RL","Pyrgus centaureae","Grizzled Skipper",1,3
+"143","RP","Pieris rapae","Cabbage White",5470,170.783729433272
+"144","RP","Papilio glaucus","Eastern Tiger Swallowtail",5383,26.0926992383429
+"145","RP","Epargyreus clarus","Silver-spotted Skipper",5253,42.2109270892823
+"146","RP","Papilio polyxenes","Black Swallowtail",4443,9.25455773126266
+"147","RP","Papilio troilus","Spicebush Swallowtail",4152,15.895472061657
+"148","RP","Celastrina ladon neglecta","'Summer' Spring Azure",3575,22.9264335664336
+"149","RP","Strymon melinus","Gray Hairstreak",2762,9.43374366401159
+"150","RP","Polites themistocles","Tawny-edged Skipper",2543,7.19150609516319
+"151","RP","Battus philenor","Pipevine Swallowtail",1930,15.7678756476684
+"152","RP","Papilio cresphontes","Giant Swallowtail",1452,6.62741046831956
+"153","RP","Eurytides marcellus","Zebra Swallowtail",1297,17.6622976098689
+"154","RP","Celastrina ladon","Spring Azure",1265,9.90197628458498
+"155","RP","Lerema accius","Clouded Skipper",1074,9.47299813780261
+"156","RP","Papilio canadensis","Canadian Tiger Swallowtail",671,13.6661698956781
+"157","RP","Pieris napi","Mustard White",406,20.5467980295567
+"158","RP","Callophrys gryneus","Juniper Hairstreak",379,6.5778364116095
+"159","RP","Leptotes cassius","Cassius Blue",345,47.231884057971
+"160","RP","Callophrys gryneus gryneus","'Olive' Juniper Hairstreak",291,6.40549828178694
+"161","RP","Parrhasius m-album","White M Hairstreak",258,2.32170542635659
+"162","RP","Glaucopsyche lygdamus","Silvery Blue",187,13.7593582887701
+"163","RP","Papilio","Papilio",148,4.35135135135135
+"164","RP","Atlides halesus","Great Purple Hairstreak",147,3.64625850340136
+"165","RP","Pieris","Pieris",83,6.1566265060241
+"166","RP","Brephidium isophthalma","Eastern Pygmy-Blue",81,30.2962962962963
+"167","RP","Celastrina ladon ladon","'Spring' Spring Azure",79,12.0379746835443
+"168","RP","Celastrina neglectamajor","Appalachian Azure",71,9.02816901408451
+"169","RP","Pieris napi oleracea","'Veined' Mustard White",71,11.2676056338028
+"170","RP","Nastra neamathla","Neamathla Skipper",53,2.05660377358491
+"171","RP","Celastrina","Celastrina",45,5.06666666666667
+"172","RP","Autochton cellus","Golden Banded-Skipper",39,10.9487179487179
+"173","RP","Callophrys niphon","Eastern Pine Elfin",39,26
+"174","RP","Callophrys augustinus","Brown Elfin",21,4.61904761904762
+"175","RP","Callophrys","Callophrys",11,23.4545454545455
+"176","RP","Callophrys hesseli","Hessel's Hairstreak",10,1
+"177","RP","Callophrys eryphon","Western Pine Elfin",7,9.14285714285714
+"178","RP","Callophrys polios","Hoary Elfin",7,1.57142857142857
+"179","RP","Papilio aristodemus","Schaus' Swallowtail",5,3.8
+"180","RP","Callophrys henrici","Henry's Elfin",3,1.33333333333333
+"181","RP","Callophrys irus","Frosted Elfin",2,1
+"182","RP","Euchloe olympia","Olympia Marble",2,2.5
+"183","RP","Anthocharis midea","Falcate Orangetip",1,2
+"184","RP","Callophrys gryneus sweadneri","'Sweadner's' Juniper Hairstreak",1,1
+"185","RP","Celastrina ladon humulus","'Hops' Spring Azure",1,8
+"186","RP","Celastrina ladon serotina","'Cherry-gall' Spring Azure",1,1
