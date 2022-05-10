@@ -1,3 +1,5 @@
+# crossley et al. extent
+
 #load libraries
 library(lme4)
 library(lmerTest)
@@ -11,7 +13,6 @@ library(sjPlot)
 bfly_trends = read.table("data/butterfly_traits_envars_trends_50km_NoMergeJul_m5_trim_6traits.txt",sep='\t',as.is=T,check.names=F,header=T)
 
 # build first model
-
 m <- lmer(Abundance.trend ~ Cropland.trend + Built.2005_2015 + Precip.1993_2018 +
           Temp.1993_2018 + LarvalColor + LarvalHair + AdultSize + AdultColor +  
             Diet.breadth.families + (1 | grid_id) + (1 | Species),
@@ -128,8 +129,88 @@ pglmm <- pglmm(Abundance.trend ~ Precip.1993_2018 + Temp.1993_2018 +
 summary(pglmm)
 # look at posterior distributions
 p <- phyr::plot_bayes(x = pglmm)
-ggsave(plot = p, filename = "MikeDir/figures/pglmm_effects_entireExtent.png",
-       dpi = 400, width = 12, height = 8)
+
+x = pglmm
+n_samp = 1000
+sort = TRUE
+re.names <- names(x$random.effects)
+if (x$family == "gaussian") re.names <- c("residual", re.names)
+random_samps <- lapply(x$inla.model$marginals.hyperpar, 
+                       function(x) INLA::inla.rmarginal(n_samp, INLA::inla.tmarginal(function(x) sqrt(1 / x), x))) %>%
+  setNames(re.names) %>%
+  dplyr::as_tibble() %>%
+  tidyr::pivot_longer(cols = dplyr::everything(),
+                      names_to = "var",
+                      values_to = "val") %>%
+  dplyr::mutate(effect_type = "Random Effects")
+
+fixed_samps <- lapply(x$inla.model$marginals.fixed, function(x) INLA::inla.rmarginal(n_samp, x)) %>%
+  dplyr::as_tibble() %>%
+  tidyr::pivot_longer(cols = dplyr::everything(),
+                      names_to = "var",
+                      values_to = "val") %>%
+  dplyr::mutate(effect_type = "Fixed Effects")
+
+samps <- dplyr::bind_rows(random_samps, fixed_samps) %>%
+  dplyr::mutate(effect_type = factor(effect_type, 
+                                     levels = c("Random Effects", "Fixed Effects")))
+
+ci <- samps %>%
+  dplyr::group_by(var, effect_type) %>%
+  dplyr::summarise(lower = quantile(val, 0.025),
+                   upper = quantile(val, 0.975),
+                   mean = mean(val),
+                   .groups = "drop_last")
+
+if(sort){
+  ci <- dplyr::arrange(ci, mean) %>% dplyr::ungroup() %>% 
+    dplyr::mutate(var = factor(as.character(var), levels = as.character(var)))
+}
+
+sig_vars <- ci %>%
+  dplyr::mutate(sig = ifelse(effect_type == "Random Effects",
+                             "CI no overlap with zero",
+                             ifelse(sign(lower) == sign(upper),
+                                    "CI no overlap with zero",
+                                    "CI overlaps zero"))) %>%
+  dplyr::select(var, sig)
+
+if(sort){
+  samps <- dplyr::mutate(samps, var = factor(var, levels = levels(sig_vars$var)))
+}
+
+samps <- samps %>%
+  dplyr::left_join(sig_vars, by = "var") %>%
+  dplyr::group_by(var) %>%
+  dplyr::filter(abs(val - mean(val)) < (10 * sd(val))) %>% 
+  dplyr::ungroup()
+
+pal <- c("#fc8d62", "#8da0cb")
+p <- ggplot2::ggplot(filter(samps, effect_type == "Random Effects"),
+                     ggplot2::aes(val, var, height = ..density..)) +
+  ggridges::geom_density_ridges(ggplot2::aes(alpha = sig, fill = sig), 
+                                stat = "density", adjust = 2, color = "gray70") +
+  ggplot2::geom_point(ggplot2::aes(x = mean, y = var),
+                      data = filter(ci, effect_type == "Random Effects"), inherit.aes = FALSE) +
+  ggplot2::geom_errorbarh(ggplot2::aes(xmin = lower, xmax = upper, y = var),
+                          data = filter(ci, effect_type == "Random Effects"),
+                          inherit.aes = FALSE, height = 0.1) +
+  ggplot2::geom_vline(xintercept = 0, linetype = 2, colour = "grey40") +
+  ggplot2::scale_alpha_manual(values = c(0.8, 0.2)) +
+  ggplot2::scale_fill_manual(values = rev(pal)) +
+  ggplot2::ylab("") +
+  ggplot2::xlab("Estimate") +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(legend.position = "none",
+                 axis.text = ggplot2::element_text(size = 14),
+                 strip.text = ggplot2::element_text(size = 16))
+
+p
+
+
+
+ggsave(plot = p, filename = "MikeDir/figures/pglmm_randeomEffects_entireExtent.png",
+       dpi = 400, width = 5, height = 2.5)
 # now plot interactions
 pred_vals <- -3:3
 
@@ -405,8 +486,9 @@ ggsave(plot = prec_ows, filename = "MikeDir/figures/prec_OWS_interaction_fullExt
        dpi = 450, width = 6, height = 3.5)
 
 
-cp <- cowplot::plot_grid(temp_ows, prec_ows, labels = c("A","B"))
+cp <- cowplot::plot_grid(temp_ows, prec_ows, p,
+                         labels = c("A","B", "C"))
 cp
 
 ggsave(plot = cp, filename = "MikeDir/figures/OWS_interaction_fullExtent.png",
-       dpi = 450, width = 12, height = 4)
+       dpi = 450, width = 14, height = 8)
